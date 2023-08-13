@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "kkyoung_org"
     hostname     = "app.terraform.io" # default
 
     workspaces {
