@@ -1,6 +1,6 @@
-terraform {
+cat ~/.terraform.d/credentials.tfrc.json | jqterraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "j2h0-org"
     hostname     = "app.terraform.io" # default
 
     workspaces {
