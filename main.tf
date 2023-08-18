@@ -1,4 +1,4 @@
-cat ~/.terraform.d/credentials.tfrc.json | jqterraform {
+terraform {
   cloud {
     organization = "j2h0-org"
     hostname     = "app.terraform.io" # default
