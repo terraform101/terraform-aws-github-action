@@ -8,8 +8,8 @@ on:
 
 env:
   MY_PREFIX: DEV
-  TF_VERSION: 1.2.5
-
+  TF_VERSION: 1.2.6
+  
 jobs:
   SCAN:
     name: SCAN

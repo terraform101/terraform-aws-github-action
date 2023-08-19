@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "wdb-tf-study"
     hostname     = "app.terraform.io" # default
 
     workspaces {
@@ -19,8 +19,8 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "Coffee-Mug-Cake"
-      Owner   = "jerry & tom"
+      Project = "github_action"
+      Owner   = "wdb"
     }
   }
 }
