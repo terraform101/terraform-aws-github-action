@@ -43,7 +43,7 @@ variable "environment" {
   default     = "dev"
 
   validation {
-    condition     = continas(["dev", "qa", "prod"], var.environment)
+    condition     = contains(["dev", "qa", "prod"], var.environment)
     error_message = "the environment value must be dev, qa, or pord"
   }
 }
