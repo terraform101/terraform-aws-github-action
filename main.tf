@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "thumbsup"
     hostname     = "app.terraform.io" # default
 
     workspaces {
@@ -20,7 +20,7 @@ provider "aws" {
   default_tags {
     tags = {
       Project = "Coffee-Mug-Cake"
-      Owner   = "jerry & tom"
+      Owner   = "jerry & tom & shin & thumbsup"
     }
   }
 }
@@ -31,7 +31,7 @@ resource "aws_vpc" "hashicat" {
 
   tags = {
     name        = "${var.prefix}-vpc-${var.region}"
-    environment = "Production"
+    environment = var.environment
   }
 }
 
