@@ -36,3 +36,15 @@ variable "placeholder" {
   default     = "placekitten.com"
   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
 }
+
+
+variable "environment" {
+  default     = "dev"
+  type = string
+  description = "Defind infrastructure's environment"
+
+  validation {
+    condition = var.environment == "dev" || var.environment == "qa" || var.environment == "prod"
+    error_message = "The environment value must be dev,qa or prod"
+  }
+}
