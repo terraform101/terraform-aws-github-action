@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "jinsungh"
     hostname     = "app.terraform.io" # default
 
     workspaces {
@@ -21,6 +21,7 @@ provider "aws" {
     tags = {
       Project = "Coffee-Mug-Cake"
       Owner   = "jerry & tom"
+      environment = var.environment
     }
   }
 }
